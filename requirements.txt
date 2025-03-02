@@ -1,0 +1,5 @@
+numpy==1.23.5
+scipy==1.15.2
+tensorboardX==2.6.2.2
+tensorboardX==2.6.2.2
+torch==1.10.1+cu111

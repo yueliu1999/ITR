@@ -1,0 +1,22 @@
+nohup: ignoring input
+= = = = = = = = = = = = = = = = = = = = 
+## Starting Time: 2025-03-02 21:53:41
+Namespace(batch_size=512, cluster=10, dataset='CAMRa2011', device='cuda:2', emb_dim=32, epoch=30, g2i=10, layers=2, learning_rate=0.001, loss_type='BPR', num_negatives=2, patience=4, predictor='DOT', seed=0, topK=[1, 5, 10])
+[CAMRA2011] loading...
+UserItem: (602, 7710) with 111845 interactions, sparsity: 0.97590
+GroupItem: (290, 7710) with 112659 interactions, sparsity: 0.94961
+User hyper-graph torch.Size([290, 602]), Item hyper-graph torch.Size([290, 7710]), Full hyper-graph torch.Size([8312, 290])
+/home/yueliu/NIPS25/NIPS_code/ITR/dataloader.py:222: RuntimeWarning: divide by zero encountered in power
+  d_inv = np.power(row_sum, -0.5).flatten()
+[0;30;43mCAMRA2011 finish loading![0m #Users 602, #Items 7710, #Groups 290
+
+Epoch 9, user loss: 0.38343, Cost time: 2.01s
+Epoch 19, user loss: 0.36787, Cost time: 2.06s
+Epoch 29, user loss: 0.36256, Cost time: 1.57s
+[Epoch 30] Group, Hit@[1, 5, 10]: [0.61931, 0.6869, 0.80897], NDCG@[1, 5, 10]: [0.61931, 0.65042, 0.68943]
+[Epoch 30] User, Hit@[1, 5, 10]: [0.6206, 0.71395, 0.82658], NDCG@[1, 5, 10]: [0.6206, 0.66583, 0.70186]
+
+
+## Finishing Time: 2025-03-02 21:55:40
+= = = = = = = = = = = = = = = = = = = = 
+Done!

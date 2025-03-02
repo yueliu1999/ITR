@@ -1,0 +1,279 @@
+nohup: ignoring input
+= = = = = = = = = = = = = = = = = = = = 
+## Starting Time: 2025-03-02 21:53:42
+Namespace(batch_size=512, cluster=10, dataset='Mafengwo', device='cuda:0', emb_dim=32, epoch=2000, g2i=10, layers=3, learning_rate=0.0001, loss_type='BPR', num_negatives=8, patience=4, predictor='MLP', seed=0, topK=[1, 5, 10])
+[MAFENGWO] loading...
+UserItem: (5275, 1513) with 38011 interactions, sparsity: 0.99524
+GroupItem: (995, 539) with 2600 interactions, sparsity: 0.99515
+User hyper-graph torch.Size([995, 5275]), Item hyper-graph torch.Size([995, 1513]), Full hyper-graph torch.Size([6788, 995])
+/home/yueliu/NIPS25/NIPS_code/ITR/dataloader.py:222: RuntimeWarning: divide by zero encountered in power
+  d_inv = np.power(row_sum, -0.5).flatten()
+[0;30;43mMAFENGWO finish loading![0m #Users 5275, #Items 1513, #Groups 995
+
+Epoch 9, user loss: 0.41085, Cost time: 2.87s
+Epoch 19, user loss: 0.38984, Cost time: 2.81s
+Epoch 29, user loss: 0.37300, Cost time: 2.83s
+Epoch 39, user loss: 0.36384, Cost time: 2.87s
+Epoch 49, user loss: 0.35899, Cost time: 2.84s
+Epoch 59, user loss: 0.35626, Cost time: 2.88s
+Epoch 69, user loss: 0.35461, Cost time: 2.79s
+Epoch 79, user loss: 0.35340, Cost time: 2.83s
+Epoch 89, user loss: 0.35254, Cost time: 2.82s
+Epoch 99, user loss: 0.35199, Cost time: 2.80s
+[Epoch 99] Group, Hit@[1, 5, 10]: [0.00804, 0.09648, 0.19899], NDCG@[1, 5, 10]: [0.00804, 0.05076, 0.08387]
+[Epoch 99] User, Hit@[1, 5, 10]: [0.54105, 0.748, 0.82839], NDCG@[1, 5, 10]: [0.54105, 0.64949, 0.67603]
+
+Epoch 109, user loss: 0.35182, Cost time: 2.79s
+Epoch 119, user loss: 0.35141, Cost time: 2.05s
+Epoch 129, user loss: 0.35139, Cost time: 2.86s
+Epoch 139, user loss: 0.35111, Cost time: 2.78s
+Epoch 149, user loss: 0.35092, Cost time: 2.81s
+Epoch 159, user loss: 0.35085, Cost time: 2.84s
+Epoch 169, user loss: 0.35064, Cost time: 2.93s
+Epoch 179, user loss: 0.35097, Cost time: 2.84s
+Epoch 189, user loss: 0.35090, Cost time: 2.81s
+Epoch 199, user loss: 0.35070, Cost time: 2.80s
+[Epoch 199] Group, Hit@[1, 5, 10]: [0.39698, 0.73467, 0.78191], NDCG@[1, 5, 10]: [0.39698, 0.57514, 0.59086]
+[Epoch 199] User, Hit@[1, 5, 10]: [0.69156, 0.80274, 0.85918], NDCG@[1, 5, 10]: [0.69156, 0.74694, 0.76544]
+
+Epoch 209, user loss: 0.35055, Cost time: 2.82s
+Epoch 219, user loss: 0.35047, Cost time: 2.83s
+Epoch 229, user loss: 0.35051, Cost time: 2.94s
+Epoch 239, user loss: 0.35044, Cost time: 2.85s
+Epoch 249, user loss: 0.35031, Cost time: 2.91s
+Epoch 259, user loss: 0.35024, Cost time: 2.85s
+Epoch 269, user loss: 0.35033, Cost time: 2.84s
+Epoch 279, user loss: 0.35023, Cost time: 2.81s
+Epoch 289, user loss: 0.35017, Cost time: 2.87s
+Epoch 299, user loss: 0.35012, Cost time: 2.88s
+[Epoch 299] Group, Hit@[1, 5, 10]: [0.57286, 0.85126, 0.87136], NDCG@[1, 5, 10]: [0.57286, 0.72817, 0.735]
+[Epoch 299] User, Hit@[1, 5, 10]: [0.67446, 0.79647, 0.85177], NDCG@[1, 5, 10]: [0.67446, 0.73578, 0.75401]
+
+Epoch 309, user loss: 0.35024, Cost time: 2.89s
+Epoch 319, user loss: 0.35009, Cost time: 2.85s
+Epoch 329, user loss: 0.35012, Cost time: 2.83s
+Epoch 339, user loss: 0.34995, Cost time: 2.88s
+Epoch 349, user loss: 0.35013, Cost time: 2.81s
+Epoch 359, user loss: 0.35016, Cost time: 2.89s
+Epoch 369, user loss: 0.35012, Cost time: 2.87s
+Epoch 379, user loss: 0.35017, Cost time: 2.80s
+Epoch 389, user loss: 0.35012, Cost time: 2.80s
+Epoch 399, user loss: 0.35001, Cost time: 2.80s
+[Epoch 399] Group, Hit@[1, 5, 10]: [0.67136, 0.8995, 0.90754], NDCG@[1, 5, 10]: [0.67136, 0.79916, 0.80187]
+[Epoch 399] User, Hit@[1, 5, 10]: [0.66876, 0.7919, 0.84778], NDCG@[1, 5, 10]: [0.66876, 0.73037, 0.7487]
+
+Epoch 409, user loss: 0.35020, Cost time: 2.81s
+Epoch 419, user loss: 0.34989, Cost time: 2.91s
+Epoch 429, user loss: 0.34991, Cost time: 2.82s
+Epoch 439, user loss: 0.34998, Cost time: 2.85s
+Epoch 449, user loss: 0.34987, Cost time: 2.95s
+Epoch 459, user loss: 0.35002, Cost time: 2.82s
+Epoch 469, user loss: 0.34997, Cost time: 2.84s
+Epoch 479, user loss: 0.34989, Cost time: 2.85s
+Epoch 489, user loss: 0.34983, Cost time: 2.88s
+Epoch 499, user loss: 0.34997, Cost time: 2.84s
+[Epoch 499] Group, Hit@[1, 5, 10]: [0.72965, 0.91558, 0.92261], NDCG@[1, 5, 10]: [0.72965, 0.83422, 0.83659]
+[Epoch 499] User, Hit@[1, 5, 10]: [0.66192, 0.78848, 0.84607], NDCG@[1, 5, 10]: [0.66192, 0.72536, 0.74422]
+
+Epoch 509, user loss: 0.34988, Cost time: 2.81s
+Epoch 519, user loss: 0.34984, Cost time: 2.89s
+Epoch 529, user loss: 0.34990, Cost time: 2.84s
+Epoch 539, user loss: 0.34993, Cost time: 2.89s
+Epoch 549, user loss: 0.34989, Cost time: 2.89s
+Epoch 559, user loss: 0.35013, Cost time: 2.88s
+Epoch 569, user loss: 0.35005, Cost time: 2.84s
+Epoch 579, user loss: 0.34990, Cost time: 2.87s
+Epoch 589, user loss: 0.34998, Cost time: 2.88s
+Epoch 599, user loss: 0.35010, Cost time: 2.87s
+[Epoch 599] Group, Hit@[1, 5, 10]: [0.75879, 0.92563, 0.92764], NDCG@[1, 5, 10]: [0.75879, 0.85382, 0.85451]
+[Epoch 599] User, Hit@[1, 5, 10]: [0.6374, 0.77822, 0.83637], NDCG@[1, 5, 10]: [0.6374, 0.70763, 0.7265]
+
+Epoch 609, user loss: 0.34996, Cost time: 2.87s
+Epoch 619, user loss: 0.35022, Cost time: 2.85s
+Epoch 629, user loss: 0.35011, Cost time: 2.82s
+Epoch 639, user loss: 0.35015, Cost time: 2.84s
+Epoch 649, user loss: 0.35005, Cost time: 2.87s
+Epoch 659, user loss: 0.35020, Cost time: 2.83s
+Epoch 669, user loss: 0.35005, Cost time: 2.90s
+Epoch 679, user loss: 0.35015, Cost time: 2.87s
+Epoch 689, user loss: 0.35022, Cost time: 2.86s
+Epoch 699, user loss: 0.35007, Cost time: 2.83s
+[Epoch 699] Group, Hit@[1, 5, 10]: [0.77789, 0.93266, 0.93467], NDCG@[1, 5, 10]: [0.77789, 0.86655, 0.86724]
+[Epoch 699] User, Hit@[1, 5, 10]: [0.63398, 0.77879, 0.83751], NDCG@[1, 5, 10]: [0.63398, 0.7069, 0.72596]
+
+Epoch 709, user loss: 0.35014, Cost time: 2.92s
+Epoch 719, user loss: 0.35017, Cost time: 2.89s
+Epoch 729, user loss: 0.35017, Cost time: 2.86s
+Epoch 739, user loss: 0.35018, Cost time: 2.88s
+Epoch 749, user loss: 0.34997, Cost time: 2.87s
+Epoch 759, user loss: 0.35020, Cost time: 2.90s
+Epoch 769, user loss: 0.35009, Cost time: 2.79s
+Epoch 779, user loss: 0.35013, Cost time: 2.90s
+Epoch 789, user loss: 0.35033, Cost time: 2.88s
+Epoch 799, user loss: 0.35037, Cost time: 2.78s
+[Epoch 799] Group, Hit@[1, 5, 10]: [0.79497, 0.93668, 0.93869], NDCG@[1, 5, 10]: [0.79497, 0.87693, 0.87758]
+[Epoch 799] User, Hit@[1, 5, 10]: [0.62999, 0.77651, 0.83637], NDCG@[1, 5, 10]: [0.62999, 0.70383, 0.72332]
+
+Epoch 809, user loss: 0.35006, Cost time: 2.84s
+Epoch 819, user loss: 0.35033, Cost time: 2.79s
+Epoch 829, user loss: 0.35026, Cost time: 2.82s
+Epoch 839, user loss: 0.35008, Cost time: 2.89s
+Epoch 849, user loss: 0.35038, Cost time: 2.89s
+Epoch 859, user loss: 0.35025, Cost time: 2.89s
+Epoch 869, user loss: 0.35033, Cost time: 2.87s
+Epoch 879, user loss: 0.35006, Cost time: 2.79s
+Epoch 889, user loss: 0.35036, Cost time: 2.94s
+Epoch 899, user loss: 0.35046, Cost time: 2.83s
+[Epoch 899] Group, Hit@[1, 5, 10]: [0.79799, 0.9397, 0.9407], NDCG@[1, 5, 10]: [0.79799, 0.88021, 0.88057]
+[Epoch 899] User, Hit@[1, 5, 10]: [0.64595, 0.78506, 0.84265], NDCG@[1, 5, 10]: [0.64595, 0.71555, 0.7343]
+
+Epoch 909, user loss: 0.35059, Cost time: 2.88s
+Epoch 919, user loss: 0.35028, Cost time: 2.84s
+Epoch 929, user loss: 0.35010, Cost time: 2.85s
+Epoch 939, user loss: 0.35044, Cost time: 2.84s
+Epoch 949, user loss: 0.35011, Cost time: 2.86s
+Epoch 959, user loss: 0.35055, Cost time: 2.90s
+Epoch 969, user loss: 0.35038, Cost time: 2.83s
+Epoch 979, user loss: 0.35006, Cost time: 2.83s
+Epoch 989, user loss: 0.35014, Cost time: 2.88s
+Epoch 999, user loss: 0.35049, Cost time: 2.86s
+[Epoch 999] Group, Hit@[1, 5, 10]: [0.81407, 0.94372, 0.94472], NDCG@[1, 5, 10]: [0.81407, 0.88927, 0.88963]
+[Epoch 999] User, Hit@[1, 5, 10]: [0.63113, 0.77822, 0.8358], NDCG@[1, 5, 10]: [0.63113, 0.70479, 0.72364]
+
+Epoch 1009, user loss: 0.35015, Cost time: 2.85s
+Epoch 1019, user loss: 0.34994, Cost time: 2.82s
+Epoch 1029, user loss: 0.35033, Cost time: 2.88s
+Epoch 1039, user loss: 0.35048, Cost time: 2.91s
+Epoch 1049, user loss: 0.35024, Cost time: 2.95s
+Epoch 1059, user loss: 0.35030, Cost time: 2.82s
+Epoch 1069, user loss: 0.35025, Cost time: 2.82s
+Epoch 1079, user loss: 0.35037, Cost time: 2.83s
+Epoch 1089, user loss: 0.35070, Cost time: 2.91s
+Epoch 1099, user loss: 0.35072, Cost time: 2.89s
+[Epoch 1099] Group, Hit@[1, 5, 10]: [0.82211, 0.94573, 0.94774], NDCG@[1, 5, 10]: [0.82211, 0.89391, 0.89456]
+[Epoch 1099] User, Hit@[1, 5, 10]: [0.63341, 0.7805, 0.8358], NDCG@[1, 5, 10]: [0.63341, 0.70688, 0.7249]
+
+Epoch 1109, user loss: 0.35035, Cost time: 2.88s
+Epoch 1119, user loss: 0.35064, Cost time: 2.84s
+Epoch 1129, user loss: 0.35053, Cost time: 2.90s
+Epoch 1139, user loss: 0.35042, Cost time: 2.86s
+Epoch 1149, user loss: 0.35027, Cost time: 2.82s
+Epoch 1159, user loss: 0.35023, Cost time: 2.80s
+Epoch 1169, user loss: 0.35129, Cost time: 2.88s
+Epoch 1179, user loss: 0.35068, Cost time: 2.86s
+Epoch 1189, user loss: 0.35060, Cost time: 2.91s
+Epoch 1199, user loss: 0.35023, Cost time: 2.83s
+[Epoch 1199] Group, Hit@[1, 5, 10]: [0.82714, 0.94774, 0.94874], NDCG@[1, 5, 10]: [0.82714, 0.89723, 0.89759]
+[Epoch 1199] User, Hit@[1, 5, 10]: [0.62942, 0.77879, 0.83637], NDCG@[1, 5, 10]: [0.62942, 0.7042, 0.72299]
+
+Epoch 1209, user loss: 0.35021, Cost time: 2.83s
+Epoch 1219, user loss: 0.35103, Cost time: 2.76s
+Epoch 1229, user loss: 0.35106, Cost time: 2.81s
+Epoch 1239, user loss: 0.35060, Cost time: 2.86s
+Epoch 1249, user loss: 0.35072, Cost time: 2.92s
+Epoch 1259, user loss: 0.35066, Cost time: 2.86s
+Epoch 1269, user loss: 0.35121, Cost time: 2.82s
+Epoch 1279, user loss: 0.35016, Cost time: 2.82s
+Epoch 1289, user loss: 0.35118, Cost time: 2.87s
+Epoch 1299, user loss: 0.35071, Cost time: 2.86s
+[Epoch 1299] Group, Hit@[1, 5, 10]: [0.82814, 0.94874, 0.95075], NDCG@[1, 5, 10]: [0.82814, 0.89805, 0.89875]
+[Epoch 1299] User, Hit@[1, 5, 10]: [0.63227, 0.77708, 0.83523], NDCG@[1, 5, 10]: [0.63227, 0.70512, 0.72414]
+
+Epoch 1309, user loss: 0.35102, Cost time: 2.94s
+Epoch 1319, user loss: 0.35145, Cost time: 2.78s
+Epoch 1329, user loss: 0.35104, Cost time: 2.82s
+Epoch 1339, user loss: 0.35082, Cost time: 2.78s
+Epoch 1349, user loss: 0.35117, Cost time: 2.90s
+Epoch 1359, user loss: 0.35112, Cost time: 2.89s
+Epoch 1369, user loss: 0.35096, Cost time: 2.89s
+Epoch 1379, user loss: 0.35126, Cost time: 2.88s
+Epoch 1389, user loss: 0.35068, Cost time: 2.87s
+Epoch 1399, user loss: 0.35108, Cost time: 2.79s
+[Epoch 1399] Group, Hit@[1, 5, 10]: [0.82915, 0.94874, 0.95075], NDCG@[1, 5, 10]: [0.82915, 0.89843, 0.89912]
+[Epoch 1399] User, Hit@[1, 5, 10]: [0.63227, 0.77879, 0.8358], NDCG@[1, 5, 10]: [0.63227, 0.70619, 0.72482]
+
+Epoch 1409, user loss: 0.35180, Cost time: 2.76s
+Epoch 1419, user loss: 0.35200, Cost time: 2.85s
+Epoch 1429, user loss: 0.35147, Cost time: 2.85s
+Epoch 1439, user loss: 0.35159, Cost time: 2.85s
+Epoch 1449, user loss: 0.35063, Cost time: 2.85s
+Epoch 1459, user loss: 0.35158, Cost time: 2.85s
+Epoch 1469, user loss: 0.35094, Cost time: 3.06s
+Epoch 1479, user loss: 0.35101, Cost time: 2.85s
+Epoch 1489, user loss: 0.35150, Cost time: 2.83s
+Epoch 1499, user loss: 0.35130, Cost time: 2.82s
+[Epoch 1499] Group, Hit@[1, 5, 10]: [0.82714, 0.94673, 0.94874], NDCG@[1, 5, 10]: [0.82714, 0.89668, 0.89737]
+[Epoch 1499] User, Hit@[1, 5, 10]: [0.62714, 0.77765, 0.83295], NDCG@[1, 5, 10]: [0.62714, 0.70221, 0.72023]
+
+Epoch 1509, user loss: 0.35153, Cost time: 2.85s
+Epoch 1519, user loss: 0.35235, Cost time: 2.79s
+Epoch 1529, user loss: 0.35150, Cost time: 2.90s
+Epoch 1539, user loss: 0.35140, Cost time: 2.86s
+Epoch 1549, user loss: 0.35216, Cost time: 2.93s
+Epoch 1559, user loss: 0.35201, Cost time: 2.86s
+Epoch 1569, user loss: 0.35251, Cost time: 3.25s
+Epoch 1579, user loss: 0.35248, Cost time: 2.85s
+Epoch 1589, user loss: 0.35217, Cost time: 3.27s
+Epoch 1599, user loss: 0.35313, Cost time: 3.26s
+[Epoch 1599] Group, Hit@[1, 5, 10]: [0.82211, 0.94472, 0.94774], NDCG@[1, 5, 10]: [0.82211, 0.89298, 0.89397]
+[Epoch 1599] User, Hit@[1, 5, 10]: [0.6317, 0.7805, 0.8358], NDCG@[1, 5, 10]: [0.6317, 0.70631, 0.72435]
+
+Epoch 1609, user loss: 0.35229, Cost time: 3.27s
+Epoch 1619, user loss: 0.35318, Cost time: 2.89s
+Epoch 1629, user loss: 0.35220, Cost time: 2.89s
+Epoch 1639, user loss: 0.35242, Cost time: 2.84s
+Epoch 1649, user loss: 0.35231, Cost time: 2.90s
+Epoch 1659, user loss: 0.35177, Cost time: 2.87s
+Epoch 1669, user loss: 0.35262, Cost time: 2.90s
+Epoch 1679, user loss: 0.35255, Cost time: 2.87s
+Epoch 1689, user loss: 0.35219, Cost time: 2.85s
+Epoch 1699, user loss: 0.35184, Cost time: 2.78s
+[Epoch 1699] Group, Hit@[1, 5, 10]: [0.81608, 0.9397, 0.94372], NDCG@[1, 5, 10]: [0.81608, 0.88774, 0.88908]
+[Epoch 1699] User, Hit@[1, 5, 10]: [0.63284, 0.78221, 0.83523], NDCG@[1, 5, 10]: [0.63284, 0.7076, 0.72499]
+
+Epoch 1709, user loss: 0.35205, Cost time: 2.87s
+Epoch 1719, user loss: 0.35175, Cost time: 2.88s
+Epoch 1729, user loss: 0.35242, Cost time: 2.88s
+Epoch 1739, user loss: 0.35217, Cost time: 2.82s
+Epoch 1749, user loss: 0.35276, Cost time: 2.87s
+Epoch 1759, user loss: 0.35288, Cost time: 2.80s
+Epoch 1769, user loss: 0.35213, Cost time: 2.90s
+Epoch 1779, user loss: 0.35421, Cost time: 2.86s
+Epoch 1789, user loss: 0.35281, Cost time: 2.86s
+Epoch 1799, user loss: 0.35365, Cost time: 2.96s
+[Epoch 1799] Group, Hit@[1, 5, 10]: [0.81508, 0.94171, 0.94573], NDCG@[1, 5, 10]: [0.81508, 0.88866, 0.88999]
+[Epoch 1799] User, Hit@[1, 5, 10]: [0.62942, 0.77993, 0.83295], NDCG@[1, 5, 10]: [0.62942, 0.70487, 0.72227]
+
+Epoch 1809, user loss: 0.35347, Cost time: 2.83s
+Epoch 1819, user loss: 0.35317, Cost time: 2.88s
+Epoch 1829, user loss: 0.35318, Cost time: 2.88s
+Epoch 1839, user loss: 0.35372, Cost time: 2.85s
+Epoch 1849, user loss: 0.35390, Cost time: 3.26s
+Epoch 1859, user loss: 0.35397, Cost time: 2.89s
+Epoch 1869, user loss: 0.35266, Cost time: 2.89s
+Epoch 1879, user loss: 0.35351, Cost time: 2.78s
+Epoch 1889, user loss: 0.35399, Cost time: 3.23s
+Epoch 1899, user loss: 0.35364, Cost time: 3.25s
+[Epoch 1899] Group, Hit@[1, 5, 10]: [0.80503, 0.9397, 0.94271], NDCG@[1, 5, 10]: [0.80503, 0.88326, 0.88426]
+[Epoch 1899] User, Hit@[1, 5, 10]: [0.64994, 0.78791, 0.83979], NDCG@[1, 5, 10]: [0.64994, 0.71902, 0.73603]
+
+Epoch 1909, user loss: 0.35358, Cost time: 3.24s
+Epoch 1919, user loss: 0.35303, Cost time: 2.86s
+Epoch 1929, user loss: 0.35408, Cost time: 3.25s
+Epoch 1939, user loss: 0.35302, Cost time: 2.83s
+Epoch 1949, user loss: 0.35399, Cost time: 3.27s
+Epoch 1959, user loss: 0.35377, Cost time: 3.18s
+Epoch 1969, user loss: 0.35404, Cost time: 3.28s
+Epoch 1979, user loss: 0.35339, Cost time: 2.81s
+Epoch 1989, user loss: 0.35379, Cost time: 2.85s
+Epoch 1999, user loss: 0.35387, Cost time: 2.84s
+[Epoch 1999] Group, Hit@[1, 5, 10]: [0.81206, 0.94171, 0.94573], NDCG@[1, 5, 10]: [0.81206, 0.88729, 0.88862]
+[Epoch 1999] User, Hit@[1, 5, 10]: [0.626, 0.77708, 0.8301], NDCG@[1, 5, 10]: [0.626, 0.70211, 0.71949]
+
+[Epoch 2000] Group, Hit@[1, 5, 10]: [0.79196, 0.93467, 0.9397], NDCG@[1, 5, 10]: [0.79196, 0.87455, 0.87621]
+[Epoch 2000] User, Hit@[1, 5, 10]: [0.74002, 0.82953, 0.87514], NDCG@[1, 5, 10]: [0.74002, 0.78496, 0.79991]
+
+
+## Finishing Time: 2025-03-03 00:07:10
+= = = = = = = = = = = = = = = = = = = = 
+Done!
